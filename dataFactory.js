@@ -10,7 +10,25 @@ angular.module('app')
             { id: 6, name: 'Carrol Buchanan', gender: 'male', company: 'Ecosys'},
         ];
     }
-    return {
-        getGridData: getGridData
+    function getFaltvarden() {
+        return [
+            ["Födelse", "", "Ramsele", "1778", "","","","", ""],
+            ["Födelse", "", "Ramsele", "1779", "","","","", ""],
+            ["Födelse", "", "Ramsele", "1780", "","","","", ""]
+        ];
     }
-})
+    function getFaltdefinitioner() {
+        return [
+            {faltnamn: "Sökord"},
+            {faltnamn: "Källtroget"},
+            {faltnamn: "Församling"},
+            {faltnamn: "Startår"},
+            {faltnamn: "Slutår"}
+        ];
+    }    
+    return {
+        getGridData: getGridData,
+        getFaltvarden: getFaltvarden,
+        getFaltdefinitioner: getFaltdefinitioner
+    };
+});
