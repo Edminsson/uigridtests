@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css">
+    <link rel="stylesheet" href="site.css">
+</head>
+<body ng-controller="mainController">
+    <h2>{{title}}</h2>
+    <div ui-grid="{ data: gridData }" class="myGrid"></div>
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.js"></script>
+    <script src="app.js"></script>
+    <script src="dataFactory.js"></script>
+</body>
+</html>
