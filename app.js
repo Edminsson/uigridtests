@@ -3,6 +3,7 @@ angular.module('app', ['ui.grid', 'ui.grid.edit'])
     $scope.title = "Angular UI-grid tests";
     var faltdefinitioner = dataFactory.getFaltdefinitioner();
     var faltvarden = dataFactory.getFaltvarden();
+    var altFaltvarden = dataFactory.getAltFaltvarden();
 
     var options = {};
     options.columnDefs = faltdefinitioner.map((def, index)=> {
@@ -17,6 +18,17 @@ angular.module('app', ['ui.grid', 'ui.grid.edit'])
     });
 
     $scope.gridOptions = options;
+
+    var options = {};
+    options.data = altFaltvarden.map((faltvarde) => {
+        var datacell = {};
+        for (var i = 0; i < faltdefinitioner.length; i++) {
+            datacell[faltdefinitioner[i].faltnamn] = faltvarde[i];
+        }
+        return datacell;
+    });
+
+    $scope.altGridOptions = options;
 
 
 

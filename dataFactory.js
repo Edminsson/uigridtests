@@ -17,6 +17,13 @@ angular.module('app')
             ["Födelse", "", "Ramsele", "1780", "","","","", ""]
         ];
     }
+    function getAltFaltvarden() {
+        return [
+            ["Födelse och vigsel", "", "Ramsele", "1778", "","","","", ""],
+            ["Födelse och vigsel", "", "Ramsele", "1779", "","","","", ""],
+            ["Födelse och vigsel", "", "Ramsele", "1780", "1781","","","", ""]
+        ];
+    }
     function getFaltdefinitioner() {
         return [
             {faltnamn: "Sökord"},
@@ -29,6 +36,7 @@ angular.module('app')
     return {
         getGridData: getGridData,
         getFaltvarden: getFaltvarden,
+        getAltFaltvarden: getAltFaltvarden,
         getFaltdefinitioner: getFaltdefinitioner
     };
 });
