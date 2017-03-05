@@ -16,6 +16,10 @@
   ],
   "dependencies": {
     "angular-ui-grid": "^4.0.2",
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "angular-bootstrap": "^2.5.0",
+    "angular-animate": "^1.6.2",
+    "angular-touch": "^1.6.2",
+    "bootstrap": "^3.3.7"
   }
 }

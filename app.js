@@ -1,4 +1,4 @@
-angular.module('app', ['ui.grid', 'ui.grid.edit'])
+angular.module('app', ['ui.grid', 'ui.grid.edit', 'ngAnimate', 'ui.bootstrap'])
 .controller('mainController', function($scope, dataFactory) {
     $scope.title = "Angular UI-grid tests";
     var faltdefinitioner = dataFactory.getFaltdefinitioner();
@@ -29,6 +29,13 @@ angular.module('app', ['ui.grid', 'ui.grid.edit'])
     });
 
     $scope.altGridOptions = options;
+
+    ///////////////////////////////////////////////////////////////////////
+    $scope.isNavCollapsed = true;
+    $scope.isCollapsed = true;
+    $scope.isCollapsedHorizontal = true;
+    ///////////////////////////////////////////////////////////////////////
+
 
 
 
